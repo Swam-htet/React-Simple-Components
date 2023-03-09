@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import "./../src/Components/Tab"
+import Tab from "./Components/Tab";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    // todos
+    let headers = ["Title One", "Title Two", "Title Three"]
+
+    return (
+        <div className="App">
+            <Tab headers={headers}>
+                <div>
+                    <h2>Title One</h2>
+                </div>
+                <div>
+                    <h2>Title Two</h2>
+                </div>
+                <div>
+                    <h2>Title Three</h2>
+                </div>
+            </Tab>
+        </div>
+    );
 }
 
 export default App;

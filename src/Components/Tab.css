@@ -1,0 +1,27 @@
+.tab{
+    background-color: orange;
+}
+
+.tab-list{
+    display: flex;
+    list-style: none;
+}
+
+.tab-item{
+    padding: 20px;
+    padding-left: 50px;
+    font-weight: bolder;
+    border-bottom: 3px solid orange;
+}
+
+.tab-item:hover{
+    border-bottom:3px solid black;
+}
+
+.tab-body{
+    padding: 100px;
+}
+
+.active{
+    border-bottom:3px solid black;
+}
